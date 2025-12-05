@@ -33,11 +33,7 @@ export default function Navbar() {
           <Link href="#contact" className="btn btn-primary text-sm">
             Hire Us
           </Link>
-          <button
-            className="md:hidden text-2xl"
-            onClick={() => setOpen((v) => !v)}
-            aria-label="Toggle navigation menu"
-          >
+          <button className="md:hidden text-2xl" onClick={() => setOpen((v) => !v)}>
             ☰
           </button>
         </div>
