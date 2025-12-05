@@ -6,7 +6,7 @@ export async function GET(request: Request) {
   const host = request.headers.get("host");
   const base =
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-    (host ? `https://${host}` : "https://primesitedigital.vercel.app");
+    (host ? `https://${host}` : "https://unibraindigital.vercel.app");
 
   const urls = routes
     .map(

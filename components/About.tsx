@@ -6,7 +6,7 @@ export default function About() {
           <p className="text-sm uppercase tracking-[0.25em] text-[#76e4c3]">About</p>
           <h3 className="font-heading text-3xl">We build products that feel inevitable</h3>
           <p className="text-white/75 leading-relaxed">
-            PrimeSite Digital is a small, sharp studio blending product strategy, design, and full-stack engineering.
+            UniBrain Digital is a small, sharp studio blending product strategy, design, and full-stack engineering.
             We craft experiences that are both premium and fast, from cinematic marketing sites to AI-driven internal
             tools.
           </p>

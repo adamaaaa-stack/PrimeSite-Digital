@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 lg:flex-row lg:items-center">
         <div className="flex-1 space-y-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.25em] text-[#76e4c3]">
-            PrimeSite Digital
+            UniBrain Digital
           </span>
           <div className="space-y-4">
             <h2 className="font-heading text-4xl leading-tight md:text-5xl">

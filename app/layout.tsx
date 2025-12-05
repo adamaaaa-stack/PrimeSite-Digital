@@ -15,8 +15,8 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "PrimeSite Digital — Portfolio",
-  description: "Portfolio of PrimeSite Digital: modern web, AI, and automation builds.",
+  title: "UniBrain Digital — Portfolio",
+  description: "Portfolio of UniBrain Digital: modern product sites with embedded AI chatbots.",
 };
 
 export default function RootLayout({
