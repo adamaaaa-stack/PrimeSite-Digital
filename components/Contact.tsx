@@ -49,7 +49,7 @@ export default function Contact() {
               <a href="https://github.com/" className="pill">
                 GitHub
               </a>
-              <a href="https://instagram.com/" className="pill">
+              <a href="https://instagram.com/unibrain_digital" className="pill">
                 Instagram
               </a>
             </div>
