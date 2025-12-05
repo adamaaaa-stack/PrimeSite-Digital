@@ -3,7 +3,7 @@ import { services } from "@/lib/services";
 export default function Services() {
   return (
     <section id="services" className="section">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-5xl px-6">
         <p className="text-sm uppercase tracking-[0.25em] text-[#76e4c3]">Capabilities</p>
         <h3 className="font-heading text-3xl mt-2">Services</h3>
         <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
