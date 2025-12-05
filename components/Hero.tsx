@@ -10,11 +10,11 @@ export default function Hero() {
           </span>
           <div className="space-y-4">
             <h2 className="font-heading text-4xl leading-tight md:text-5xl">
-              Premium websites, front to back, built for founders who move fast.
+              Product websites with embedded AI chatbots—front to back.
             </h2>
             <p className="text-lg text-white/70 leading-relaxed max-w-2xl">
-              I design and build cinematic, high-performing web experiences—end to end. From frontend polish to backend
-              reliability, every page is tuned for speed, clarity, and conversion.
+              I build conversion-focused product sites and pair them with on-brand AI chatbots for faster support and
+              lead capture. Full-stack builds with polished frontends and reliable backends.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
@@ -32,7 +32,7 @@ export default function Hero() {
                   <p className="text-sm text-white/60">Active Build</p>
                   <h3 className="font-heading text-2xl">Launch-grade storytelling</h3>
                   <p className="text-white/70 mt-2">
-                    Landing systems with live CMS, A/B ready sections, and motion-first components—built as full-stack
+                    Landing systems with live CMS, on-page AI chatbots, and motion-first components—built as full-stack
                     sites with production-ready backends.
                   </p>
                 </div>
