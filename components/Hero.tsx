@@ -22,13 +22,6 @@ export default function Hero() {
               Start a project
             </Link>
           </div>
-          <div className="flex flex-wrap gap-3 text-sm text-white/70">
-            {["Next.js", "TypeScript", "Tailwind", "Node", "Postgres"].map((tag) => (
-              <span key={tag} className="pill">
-                {tag}
-              </span>
-            ))}
-          </div>
         </div>
         <div className="flex-1">
           <div className="relative overflow-hidden rounded-3xl glass-card p-8">
