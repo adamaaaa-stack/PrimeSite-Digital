@@ -1,7 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import { projects } from "@/lib/projects";
 
 export default function Projects() {
+  const [open, setOpen] = useState<number | null>(null);
   const hasProjects = projects && projects.length > 0;
+  const selected = open !== null ? projects[open] : null;
 
   return (
     <section id="projects" className="section">
@@ -15,8 +20,12 @@ export default function Projects() {
         </div>
         {hasProjects ? (
           <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {projects.map((project) => (
-              <div key={project.title} className="glass-card rounded-3xl p-6 hover:-translate-y-1 transition-transform">
+            {projects.map((project, idx) => (
+              <button
+                key={project.title}
+                onClick={() => setOpen(idx)}
+                className="glass-card rounded-3xl p-6 text-left hover:-translate-y-1 transition-transform w-full"
+              >
                 <div className="flex items-start justify-between">
                   <h4 className="font-heading text-xl">{project.title}</h4>
                   <span className="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70">2025</span>
@@ -29,15 +38,8 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="mt-5 flex gap-3 text-sm">
-                  <a href={project.live} className="btn btn-primary w-full text-center">
-                    Live
-                  </a>
-                  <a href={project.code} className="btn btn-secondary w-full text-center">
-                    Code
-                  </a>
-                </div>
-              </div>
+                <div className="mt-5 text-sm text-[#76e4c3] underline">View details</div>
+              </button>
             ))}
           </div>
         ) : (
@@ -46,6 +48,56 @@ export default function Projects() {
           </div>
         )}
       </div>
+
+      {selected && (
+        <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/70 px-4 py-8">
+          <div className="relative w-full max-w-3xl rounded-3xl glass-card p-8">
+            <button
+              onClick={() => setOpen(null)}
+              className="absolute right-4 top-4 rounded-full bg-white/10 px-3 py-1 text-sm text-white/80"
+            >
+              Close
+            </button>
+            <div className="space-y-4">
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.3em] text-[#76e4c3]">Case Study</p>
+                  <h4 className="font-heading text-2xl">{selected.title}</h4>
+                </div>
+                <span className="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70">Concept</span>
+              </div>
+              <p className="text-white/75">{selected.longDesc}</p>
+              <div className="flex flex-wrap gap-2">
+                {selected.tags.map((tag) => (
+                  <span key={tag} className="pill">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              {selected.highlights && selected.highlights.length > 0 && (
+                <div className="space-y-2">
+                  <p className="text-sm text-white/60">Highlights</p>
+                  <div className="grid gap-2 md:grid-cols-2">
+                    {selected.highlights.map((item) => (
+                      <div key={item} className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white/80">
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              <div className="flex flex-wrap gap-3 text-sm">
+                <a href={selected.live} className="btn btn-primary" target="_blank" rel="noreferrer">
+                  View mock site
+                </a>
+                <a href={selected.code} className="btn btn-secondary" target="_blank" rel="noreferrer">
+                  View repo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

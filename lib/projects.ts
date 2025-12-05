@@ -5,6 +5,9 @@ export const projects = [
     tags: ["Next.js", "Booking UX", "Framer Motion"],
     live: "https://north-shore-barbers.primesite.digital",
     code: "https://github.com/adamaaaa-stack/PrimeSite-Digital",
+    longDesc:
+      "Full brand and booking experience: hero with cinematic photography, instant service selector, and a checkout flow tuned for mobile walk-ins and regulars. Motion cues guide users to book in under 30 seconds.",
+    highlights: ["One-tap booking", "Service tiers & add-ons", "Before/after gallery", "SEO for local search"],
   },
   {
     title: "Lumen Sofa Co.",
@@ -12,6 +15,9 @@ export const projects = [
     tags: ["Ecommerce UI", "3D/Media", "Tailwind"],
     live: "https://lumen-sofa.primesite.digital",
     code: "https://github.com/adamaaaa-stack/PrimeSite-Digital",
+    longDesc:
+      "Elevated product storytelling with rich media: rotating 3D renders, swatch picker, bundle savings, and reviews surfaced inline. Built for speed with prefetching and optimized media for mobile shoppers.",
+    highlights: ["3D/360 viewer", "Swatch + bundle builder", "Story + specs layout", "Conversion-focused CTA"],
   },
   {
     title: "StrikeForge Gear",
@@ -19,5 +25,8 @@ export const projects = [
     tags: ["Shop UX", "Conversion", "Responsive"],
     live: "https://strikeforge.primesite.digital",
     code: "https://github.com/adamaaaa-stack/PrimeSite-Digital",
+    longDesc:
+      "Built for athletes and gyms: impact demo clips, durability callouts, and a quick-compare grid across weight classes. Checkout flow tuned for mobile with installment options and upsells.",
+    highlights: ["Spec comparison", "Impact media", "Mobile-first PDP", "Fast checkout"],
   },
 ];
