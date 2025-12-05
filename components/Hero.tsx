@@ -4,8 +4,8 @@ export default function Hero() {
   return (
     <section className="section pb-10">
       <div className="mx-auto flex max-w-5xl flex-col gap-12 px-6">
-        <div className="flex-1 space-y-6">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.25em] text-[#76e4c3]">
+        <div className="flex-1 space-y-6 animate-fade-up">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.25em] text-[#76e4c3] animate-glow">
             UniBrain Digital
           </span>
           <div className="space-y-4">

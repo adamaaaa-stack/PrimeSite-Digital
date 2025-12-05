@@ -8,7 +8,10 @@ export default function Services() {
         <h3 className="font-heading text-3xl mt-2">Services</h3>
         <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => (
-            <div key={service.title} className="glass-card rounded-3xl p-5 hover:-translate-y-1 transition-transform">
+            <div
+              key={service.title}
+              className="glass-card rounded-3xl p-5 transition-transform hover:-translate-y-1 animate-fade-up"
+            >
               <div className="flex items-center gap-3">
                 <span className="text-xl">{service.icon}</span>
                 <h4 className="font-heading text-lg">{service.title}</h4>

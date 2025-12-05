@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section id="about" className="section">
-      <div className="mx-auto max-w-5xl px-6 space-y-6">
+      <div className="mx-auto max-w-5xl px-6 space-y-6 animate-fade-up">
         <div className="space-y-4">
           <p className="text-sm uppercase tracking-[0.25em] text-[#76e4c3]">About</p>
           <h3 className="font-heading text-3xl">We build products that feel inevitable</h3>

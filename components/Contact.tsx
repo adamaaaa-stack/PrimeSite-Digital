@@ -54,7 +54,7 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <form className="space-y-4" onSubmit={handleSubmit}>
+          <form className="space-y-4 animate-fade-up" onSubmit={handleSubmit}>
             <input
               name="name"
               placeholder="Your name"

@@ -49,3 +49,30 @@ body {
 .pill {
   @apply rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70;
 }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 30px rgba(118, 228, 195, 0.25); }
+  50% { box-shadow: 0 0 50px rgba(91, 178, 255, 0.4); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-up {
+  animation: fadeUp 700ms ease forwards;
+}
+
+.animate-glow {
+  animation: glowPulse 3s ease-in-out infinite;
+}
