@@ -10,8 +10,8 @@ export default function Contact() {
               Tell me about your product, timeline, and goals. I typically respond within 24 hours with next steps and an initial approach.
             </p>
             <div className="mt-6 flex flex-wrap gap-3 text-sm text-white/80">
-              <a href="mailto:primesitedigital@gmail.com" className="pill">
-                primesitedigital@gmail.com
+              <a href="mailto:primesitedigital8@gmail.com" className="pill">
+                primesitedigital8@gmail.com
               </a>
               <a href="https://github.com/" className="pill">
                 GitHub
@@ -46,7 +46,7 @@ export default function Contact() {
               Send message
             </button>
             <a
-              href="mailto:primesitedigital@gmail.com"
+              href="mailto:primesitedigital8@gmail.com"
               className="btn btn-secondary w-full justify-center text-center"
             >
               Email me directly
