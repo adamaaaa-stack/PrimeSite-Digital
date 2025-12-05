@@ -13,8 +13,8 @@ export default function Hero() {
               Product websites with embedded AI chatbots—front to back.
             </h2>
             <p className="text-lg text-white/70 leading-relaxed max-w-2xl">
-              I build conversion-focused product sites and pair them with on-brand AI chatbots for faster support and
-              lead capture. Full-stack builds with polished frontends and reliable backends.
+              I build conversion-focused product sites and embed on-brand AI chatbots directly inside them for faster
+              support and lead capture. Full-stack builds with polished frontends and reliable backends.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
